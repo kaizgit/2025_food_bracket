@@ -1,9 +1,139 @@
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
-    text-align: center;
-    padding-top: 50px;
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-h1 {
-  color: #333;
+
+.bracket-container {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+  max-width: 1400px;
+  width: 95%;
+  /* overflow-x: auto; */
+  margin-bottom: max(4vw, 50px);
+  width: 100%;
+}
+
+.bracket {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  align-items: center;
+}
+
+.left-bracket {
+  margin-right: max(4vw, 50px);
+}
+
+.right-bracket {
+  margin-left: max(4vw, 50px);
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2%;
+}
+
+.left-bracket .column-1 {
+  justify-content: space-between;
+}
+
+.right-bracket .column-1 {
+  justify-content: space-between;
+}
+
+.column-2,
+.column-3 {
+  align-self: center;
+}
+
+.column-3 {
+  margin-right: 0;
+}
+
+.left-bracket .match {
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 1%;
+  margin-bottom: 2%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.right-bracket .match {
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 1%;
+  margin-bottom: 2%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+
+.match:last-child {
+  margin-bottom: 0;
+}
+
+.match-image {
+  width: 10vw;
+  margin: 1%;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.match-image img{
+  max-width: 100%;
+  display: block;
+}
+
+.match-caption {
+  background-color: #fff;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 10vw;
+  font-size: 1vw;
+}
+
+.final-match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.final-match .final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.final-match .final .match-image{
+  width: 20vw;
+}
+
+.final-match .final .match-caption {
+    font-size: max(2vw, 1.2em);
+    font-weight: bold;
+    color: #27ae60;
+    width: auto;
 }
