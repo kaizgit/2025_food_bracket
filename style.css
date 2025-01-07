@@ -44,7 +44,7 @@ body {
 
 
 .column-1 {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 
@@ -59,15 +59,15 @@ body {
 
 
 .left-bracket .match {
-    border-left: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    padding: 1%;
-    margin-bottom: 2%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 1%;
+  margin-bottom: 2%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
 
@@ -96,7 +96,7 @@ body {
   overflow: hidden;
 }
 
-.match-image img{
+.match-image img {
   max-width: 100%;
   display: block;
   height: auto;
@@ -128,15 +128,15 @@ body {
   align-items: center;
 }
 
-.final-match .final .match-image{
+.final-match .final .match-image {
   width: 20vw;
 }
 
 .final-match .final .match-caption {
-    font-size: max(2vw, 1.2em);
-    font-weight: bold;
-    color: #27ae60;
-    width: auto;
+  font-size: max(2vw, 1.2em);
+  font-weight: bold;
+  color: #27ae60;
+  width: auto;
 }
 
 body {
@@ -185,7 +185,7 @@ body {
 
 
 .column-1 {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 
@@ -200,15 +200,15 @@ body {
 
 
 .left-bracket .match {
-    border-left: 1px solid #ccc;
-    display: flex;
-    flex-direction: column;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    padding: 1%;
-    margin-bottom: 2%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-items: center;
+  border-left: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  padding: 1%;
+  margin-bottom: 2%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center;
 }
 
 
@@ -237,7 +237,7 @@ body {
   overflow: hidden;
 }
 
-.match-image img{
+.match-image img {
   max-width: 100%;
   display: block;
   height: auto;
@@ -269,81 +269,81 @@ body {
   align-items: center;
 }
 
-.final-match .final .match-image{
+.final-match .final .match-image {
   width: 20vw;
 }
 
 .final-match .final .match-caption {
-    font-size: max(2vw, 1.2em);
-    font-weight: bold;
-    color: #27ae60;
-    width: auto;
+  font-size: max(2vw, 1.2em);
+  font-weight: bold;
+  color: #27ae60;
+  width: auto;
 }
 
 /* Modal Styles */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: 10% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-    position: relative;
-    border-radius: 8px;
-    text-align: center;
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
 }
 
 
-.modal-match-image{
+.modal-match-image {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.modal-match-image img{
-    max-width: 100%;
-    display: block;
-    height: auto;
+.modal-match-image img {
+  max-width: 100%;
+  display: block;
+  height: auto;
 }
 
 
 .close-button {
-    color: #aaa;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .close-button:hover,
 .close-button:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
-.modal-match-caption{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-top: 10px;
+.modal-match-caption {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 10px;
 }
 
 /* Conference Styles */
@@ -354,20 +354,21 @@ body {
   margin: 10px 0;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #3498db;
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  flex: 0 0 auto;
+
 }
 
 .left-bracket .conference {
   margin-left: 2%;
-  align-self: start;
   background-color: red;
+  margin-right: auto;
 }
 
 
-.right-bracket .conference{
+.right-bracket .conference {
   margin-right: 2%;
-  align-self: start;
   background-color: blue;
+  margin-left: auto;
 }
