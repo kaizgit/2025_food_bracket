@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: row;
   padding: 1%;
-  align-items: center; /* Aligns the two brackets to the center */
+  align-items: center;
 }
 
 .left-bracket {
@@ -282,7 +282,7 @@ body {
 
 /* Modal Styles */
 .modal {
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -344,4 +344,30 @@ body {
     font-weight: bold;
     color: #2c3e50;
     margin-top: 10px;
+}
+
+/* Conference Styles */
+.conference {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.left-bracket .conference {
+  margin-left: 2%;
+  align-self: start;
+  background-color: red;
+}
+
+
+.right-bracket .conference{
+  margin-right: 2%;
+  align-self: start;
+  background-color: blue;
 }
