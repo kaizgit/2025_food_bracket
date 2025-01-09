@@ -81,46 +81,41 @@ body {
   flex-grow: 1;
   justify-content: center;
   overflow: hidden;
-  border: 2px solid #ddd;         /* Add a border */
-  border-radius: 10px;             /* Rounded corners */
-  padding: 10px;                  /* Add some padding */
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* Subtle shadow (optional) */
-  background-color: #fff; /* Optional: White background for better contrast */
-  transition: transform 0.2s ease; /* Smooth hover effect */
+  transition: transform 0.2s ease;
 }
 
 .image-container:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
-
-
 
 .image-container img {
   display: block;
   max-width: 100%;
-  max-height: calc(100% - 40px); /* Leave room for the caption */
+  max-height: calc(100% - 40px);
   width: auto;
   height: auto;
   object-fit: contain;
-  border-radius: 8px;    /* Slightly smaller radius than the container */
-
+  border-radius: 8px;
 }
 
 .caption {
-  margin-top: 1px;              /* Add some top margin for separation */
-  font-weight: bold;            /* Make caption text bold */
-  font-size: 1em; /* Increased font-size */           /* Darker gray text */
+  margin-top: 1px;
+  font-weight: bold;
+  font-size: 1em;
   text-align: center;
-  /* width: calc(100% - 20px); Adjust caption width to account for container padding */
-  padding: 5px;  /* Add padding */
-  background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 5px;
 }
 
+@media (max-width: 768px) {
+  .image-container .caption {
+      display: none;
+  }
+}
 
 /* Modal Styles */
-
 .modal {
   display: none;
   position: fixed;
