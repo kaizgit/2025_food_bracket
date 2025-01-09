@@ -1,27 +1,31 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const matches = document.querySelectorAll('.match');
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('matchModal');
-    const modalImage = modal.querySelector('.modal-match-image img');
+    const modalImg = modal.querySelector('.modal-match-image img');
     const modalCaption = modal.querySelector('.modal-match-caption');
-    const closeButton = modal.querySelector('.close-button');
+    const closeButton = document.querySelector('.close-button');
+    const imageContainers = document.querySelectorAll('.image-container');
 
-    matches.forEach(match => {
-        match.addEventListener('click', function () {
-            const imageSrc = this.getAttribute('data-image');
-            const captionText = this.getAttribute('data-caption');
+    imageContainers.forEach(container => {
+        container.addEventListener('click', () => {
+            const img = container.querySelector('img');
+            const imgSrc = img.src;
+            const caption = container.querySelector('.caption');
+            const captionText = caption.textContent;
 
-            modalImage.src = imageSrc;
+            modalImg.src = imgSrc;
+            modalImg.alt = captionText;
             modalCaption.textContent = captionText;
             modal.style.display = 'flex';
         });
     });
 
-    closeButton.addEventListener('click', function () {
+    closeButton.addEventListener('click', () => {
         modal.style.display = 'none';
     });
 
-    window.addEventListener('click', function (event) {
-        if (event.target === modal) {
+    window.addEventListener('click', (event) => {
+        if (event.target == modal) {
             modal.style.display = 'none';
         }
     });

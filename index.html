@@ -4,119 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2025 Food Bracket</title>
+    <title>Two Halves, Six Columns</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="bracket-container">
-        <div class="conference-container">
-            <div class="afc-conference">AFC</div>
-            <div class="bracket left-bracket">
-                <!-- Left Bracket -->
-                <div class="column column-1">
-                    <div class="match" data-image="./images/bills_v_broncos.jpg" data-caption="Bills vs. Broncos">
-                        <div class="match-image">
-                            <img src="./images/bills_v_broncos.jpg" alt="Team 1 vs Team 6">
-                        </div>
-                        <div class="match-caption">Bills vs. Broncos</div>
+    <div class="container">
+        <div class="half top-half">
+            <div class="top-header">AFC</div>
+            <div class="columns-container">
+                <div class="column">
+                    <div class="image-container">
+                        <img src="./images/bills_v_broncos.jpg" alt="Bills vs Broncos">
+                        <p class="caption">Bills vs Broncos</p>
                     </div>
-                    <div class="match" data-image="./images/steelers_v_ravens.jpg" data-caption="Steelers vs. Ravens">
-                        <div class="match-image">
-                            <img src="./images/steelers_v_ravens.jpg" alt="Team 2 vs Team 5">
-                        </div>
-                        <div class="match-caption">Steelers vs. Ravens</div>
+                    <div class="image-container">
+                        <img src="./images/steelers_v_ravens.jpg" alt="Steelers vs Ravens">
+                        <p class="caption">Steelers vs Ravens</p>
                     </div>
-                    <div class="match" data-image="./images/chargers_v_texans.jpg" data-caption="Chargers vs. Texans">
-                        <div class="match-image">
-                            <img src="./images/chargers_v_texans.jpg" alt="Team 3 vs Team 4">
-                        </div>
-                        <div class="match-caption">Chargers vs. Texans</div>
+                    <div class="image-container">
+                        <img src="./images/chargers_v_texans.jpg" alt="Chargers vs Texans">
+                        <p class="caption">Chargers vs Texans</p>
                     </div>
                 </div>
-                <div class="column column-2">
-                    <div class="match" data-image="./images/TBD.jpg" data-caption="TBD vs. Chiefs">
-                        <div class="match-image">
-                            <img src="./images/TBD.jpg" alt="Winner Match 1 vs Winner Match 2">
-                        </div>
-                        <div class="match-caption">TBD vs. Chiefs</div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="./images/TBD.jpg" alt="TBD">
+                        <p class="caption">TBD vs Chiefs</p>
                     </div>
-                    <div class="match" data-image="./images/TBD.jpg" data-caption="TBD vs. TBD">
-                        <div class="match-image">
-                            <img src="./images/TBD.jpg" alt="Winner Match 3 vs Skipped Team">
-                        </div>
-                        <div class="match-caption">TBD vs. TBD</div>
+                    <div class="image-container">
+                        <img src="./images/TBD.jpg" alt="TBD">
+                        <p class="caption">TBD</p>
                     </div>
                 </div>
-                <div class="column column-3">
-                    <div class="match final" data-image="./images/TBD.jpg" data-caption="TBD vs. TBD">
-                        <div class="match-image">
-                            <img src="./images/TBD.jpg" alt="Winner Round 2 Match 1 vs Winner Round 2 Match 2">
-                        </div>
-                        <div class="match-caption">TBD vs. TBD</div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="./images/TBD_final.jpg" alt="TBD">
+                        <p class="caption">TBD</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="conference-container">
-            <div class="nfc-conference">NFC</div>
-            <div class="bracket right-bracket">
-                <!-- Right Bracket (Mirrored) -->
-                <div class="column column-1">
-                    <div class="match" data-image="./images/packers_v_eagles.jpg" data-caption="Packers vs. Eagles">
-                        <div class="match-image">
-                            <img src="./images/packers_v_eagles.jpg" alt="Team 1 vs Team 6">
-                        </div>
-                        <div class="match-caption">Packers vs. Eagles</div>
-                    </div>
-                    <div class="match" data-image="./images/commanders_v_buccaneers.jpg"
-                        data-caption="Commanders vs. Buccaneers">
-                        <div class="match-image">
-                            <img src="./images/commanders_v_buccaneers.jpg" alt="Team 2 vs Team 5">
-                        </div>
-                        <div class="match-caption">Commanders vs. Buccaneers</div>
-                    </div>
-                    <div class="match" data-image="./images/rams_v_vikings.jpg" data-caption="Rams vs. Vikings">
-                        <div class="match-image">
-                            <img src="./images/rams_v_vikings.jpg" alt="Team 3 vs Team 4">
-                        </div>
-                        <div class="match-caption">Rams vs. Vikings</div>
+        <div class="half bottom-half">
+            <div class="columns-container">
+                <div class="column">
+                    <div class="image-container">
+                        <img src="./images/TBD_final.jpg" alt="TBD">
+                        <p class="caption">TBD</p>
                     </div>
                 </div>
-                <div class="column column-2">
-                    <div class="match" data-image="./images/TBD.jpg" data-caption="TBD vs. Lions">
-                        <div class="match-image">
-                            <img src="./images/TBD.jpg" alt="Winner Match 1 vs Winner Match 2">
-                        </div>
-                        <div class="match-caption">TBD vs. Lions</div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="./images/TBD.jpg" alt="TBD">
+                        <p class="caption">TBD vs Lions</p>
                     </div>
-                    <div class="match" data-image="./images/TBD.jpg" data-caption="TBD vs. TBD">
-                        <div class="match-image">
-                            <img src="./images/TBD.jpg" alt="Winner Match 3 vs Skipped Team">
-                        </div>
-                        <div class="match-caption">TBD vs. TBD</div>
+                    <div class="image-container">
+                        <img src="./images/TBD.jpg" alt="TBD">
+                        <p class="caption">TBD</p>
                     </div>
                 </div>
-                <div class="column column-3">
-                    <div class="match final" data-image="./images/TBD.jpg" data-caption="TBD vs. TBD">
-                        <div class="match-image">
-                            <img src="./images/TBD.jpg" alt="Winner Round 2 Match 1 vs Winner Round 2 Match 2">
-                        </div>
-                        <div class="match-caption">TBD vs. TBD</div>
+                <div class="column">
+                    <div class="image-container">
+                        <img src="./images/packers_v_eagles.jpg" alt="Packers vs Eagles">
+                        <p class="caption">Packers vs Eagles</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/commanders_v_buccaneers.jpg" alt="Commanders vs Buccaneers">
+                        <p class="caption">Commanders vs Buccaneers</p>
+                    </div>
+                    <div class="image-container">
+                        <img src="./images/rams_v_vikings.jpg" alt="Rams vs Vikings">
+                        <p class="caption">Rams vs Vikings</p>
                     </div>
                 </div>
             </div>
+            <div class="bottom-footer">NFC</div>
         </div>
     </div>
-    <div class="final-match">
-        <div class="match final" data-image="./images/TBD_final.jpg" data-caption="TBD vs. TBD">
-            <div class="match-image">
-                <img src="./images/TBD_final.jpg" alt="Winner 1 vs Winner 2">
-            </div>
-            <div class="match-caption">TBD vs. TBD</div>
-        </div>
-    </div>
-
     <!-- Modal Overlay -->
     <div id="matchModal" class="modal">
         <div class="modal-content">
